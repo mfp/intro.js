@@ -27,10 +27,8 @@
 .introjs-helperLayer {
   position: absolute;
   z-index: 9999998;
-  background-color: #FFF;
-  background-color: rgba(255,255,255,.9);
-  border: 1px solid #777;
-  border: 2px solid rgba(117, 117, 117, 1);
+  background: none;
+  border: 2px solid whiteSmoke;
   border-radius: 4px;
   box-shadow: 0 5px 8px -3px rgba(0,0,0,.6);
   -webkit-transition: all 0.3s ease-out;
@@ -180,6 +178,7 @@
   -moz-transition:all 0.25s ease;
   -ms-transition:all 0.25s ease;
   -o-transition:all 0.25s ease;
+  text-shadow: none;
 }
 
 .introjs-button:hover {
