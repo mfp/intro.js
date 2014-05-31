@@ -161,7 +161,10 @@
     //removing undefined/null elements
     var tempIntroItems = [];
     for (var z = 0; z < introItems.length; z++) {
-      introItems[z] && jQuery(introItems[z].element).is(":visible") && tempIntroItems.push(introItems[z]);  // copy non-empty values to the end of the array
+      introItems[z] &&
+      (introItems[z].element.className == 'introjsFloatingElement' ||
+       jQuery(introItems[z].element).is(":visible")) &&
+      tempIntroItems.push(introItems[z]);  // copy non-empty values to the end of the array
     }
 
     introItems = tempIntroItems;
